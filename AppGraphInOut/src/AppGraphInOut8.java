@@ -19,8 +19,8 @@ class AppFrame extends JFrame{
 		getContentPane().add(btn);
 		getContentPane().add(out);
 		setSize(400, 100);
-		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setVisible(true);
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		
 		btn.addActionListener( e -> {
 			String s = in.getText();
@@ -28,5 +28,8 @@ class AppFrame extends JFrame{
 			double sq = d * d;
 			out.setText(d + "的平方是:" + sq);
 		});
+		
+		
 	}
 }
+
